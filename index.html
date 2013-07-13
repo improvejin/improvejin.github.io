@@ -59,7 +59,35 @@
 <p> <a href="http://coolshell.cn/articles/9917.html#more-9917" class="more-link">阅读全文&#8230;</a></p>
 			<div class="fixed"></div>
 		</div>
-	</div>	
+		
+		
+		
+		</div>	
+	
+	
+	<div class="post" id="post-9949">
+		<h2><a class="title" href="http://coolshell.cn/articles/9949.html" rel="bookmark">IoC/DIP其实是一种管理思想</a></h2>
+		<div class="info">
+			<span class="date">2013年7月5日</span>
+			<span class="author"><a href="http://coolshell.cn/articles/author/haoel" title="由 陈皓 发布" rel="author">陈皓</a></span>						<span class="comments"><a href="http://coolshell.cn/articles/9949.html#comments" title="《IoC/DIP其实是一种管理思想》上的评论">28 条评论</a></span>
+			<span class="comments"> 8,198 人阅读  &nbsp;  &nbsp;</span>
+			<div class="fixed"></div>
+		</div>
+		<div class="content">
+			<p><img class="alignright size-medium wp-image-9957" alt="" src="http://coolshell.cn//wp-content/uploads/2013/07/inverted-bookshelf_thumb-300x200.jpg" width="300" height="200" /> 关于IoC的的概念提出来已经很多年了，其被用于一种面象对像的设计。我在这里再简单的回顾一下这个概念。我先谈技术，再说管理。</p>
+<p>话说，我们有一个开关要控制一个灯的开和关这两个动作，最常见也是最没有技术含量的实现会是这个样子：</p>
+<p><img class="aligncenter" alt="" src="http://coolshell.cn//wp-content/uploads/2013/07/IoC1.jpg" width="240" height="82" /></p>
+<p>然后，有一天，我们发现需要对灯泡扩展一下，于是我们做了个抽象类：</p>
+<p><img class="aligncenter" alt="" src="http://coolshell.cn//wp-content/uploads/2013/07/IoC2.jpg" width="290" height="183" /></p>
+<p>但是，如果有一天，我们发现这个开关可能还要控制别的不单单是灯泡的东西，我们就发现这个开关耦合了灯泡这种类别，非常不利于我们的扩展，于是反转控制出现了。</p>
+<p>就像现实世界一样，造开关的工厂根本不关心要控制的东西是什么，它只做一个开关应该做好的事，就是把电接通，把电断开（不管是手动的，还是声控的，还是光控，还是遥控的），而我们的造各种各样的灯泡（不管是日关灯，白炽灯）的工厂也不关心你用什么样的开关，反正我只管把灯的电源接口给做出来，然后，开关厂和电灯厂依赖于一个标准的通电和断电的接口。于是产生了IoC控制反转，如下图：</p>
+<p> <a href="http://coolshell.cn/articles/9949.html#more-9949" class="more-link">阅读全文&#8230;</a></p>
+			<div class="fixed"></div>
+		</div>
+		
+ 
+	</div>
+
 	
 
 		</div>
